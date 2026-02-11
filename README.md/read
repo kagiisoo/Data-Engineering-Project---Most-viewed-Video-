@@ -1,0 +1,186 @@
+📊 YouTube Trending Data Engineering Pipeline
+📌 Project Overview
+
+This project builds a scalable data engineering pipeline to process and analyse multi-country YouTube trending datasets.
+The goal is to transform raw video performance data into structured, analytics-ready datasets that support data-driven content strategy and performance insights.
+
+The pipeline focuses on data ingestion, cleaning, transformation, storage, and analytical reporting using modern data engineering tools.
+
+🎯 Objectives
+
+Build an end-to-end ETL pipeline using PySpark.
+
+Clean and standardise raw YouTube trending datasets.
+
+Store processed data in cloud storage (AWS S3).
+
+Analyse engagement metrics to identify performance patterns.
+
+Enable data-driven decision-making for content strategy.
+
+🗂️ Dataset Description
+
+The dataset includes multi-country YouTube trending data containing:
+
+Video Title
+
+Channel Name
+
+Category
+
+Views
+
+Likes
+
+Comments
+
+Publish Date
+
+Trending Date
+
+Subscriber Engagement Metrics
+
+⚙️ Tech Stack
+
+Programming & Processing
+
+Python
+
+PySpark
+
+Pandas
+
+Storage & Cloud
+
+AWS S3
+
+Development Tools
+
+VS Code
+
+Google Colab
+
+GitHub
+
+🔄 Data Pipeline Architecture
+1️⃣ Data Ingestion
+
+Imported raw CSV files from multiple countries.
+
+Loaded datasets into Spark DataFrames.
+
+2️⃣ Data Cleaning
+
+Removed duplicates and missing values.
+
+Standardised column names and formats.
+
+Converted dates into consistent datetime format.
+
+3️⃣ Data Transformation
+
+Engineered features:
+
+Engagement Rate
+
+Publish Lag
+
+Trending Duration
+
+Aggregated performance metrics.
+
+Filtered invalid or inconsistent records.
+
+4️⃣ Data Storage
+
+Stored processed datasets in AWS S3.
+
+Structured data into analytics-ready formats.
+
+5️⃣ Data Analysis
+
+Analysed factors affecting:
+
+Views
+
+Likes
+
+Comments
+
+Engagement growth
+
+Performed correlation and statistical analysis.
+
+📈 Key Insights
+
+High engagement strongly correlates with early trending performance.
+
+Posting frequency impacts long-term subscriber growth.
+
+Certain categories consistently drive higher engagement rates.
+
+Viewer interaction metrics influence overall video reach.
+
+🚀 Business Impact
+
+Enabled data-driven content strategy decisions.
+
+Improved understanding of engagement drivers.
+
+Supported optimisation of video publishing strategies.
+
+Provided structured datasets for downstream analytics.
+
+📂 Project Structure
+Youtube_Analysis_DataEngineering/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│   └── youtube_etl_pipeline.ipynb
+│
+├── scripts/
+│   └── data_processing.py
+│
+├── outputs/
+│   └── analytics_reports/
+│
+└── README.md
+
+▶️ How to Run the Project
+Step 1: Install Dependencies
+pip install pyspark pandas
+
+Step 2: Run ETL Notebook
+
+Open:
+
+notebooks/youtube_etl_pipeline.ipynb
+
+
+and run all cells.
+
+Step 3: Configure AWS Storage
+
+Connect to AWS S3 bucket.
+
+Update storage path in pipeline configuration.
+
+🔮 Future Improvements
+
+Add real-time streaming data ingestion.
+
+Integrate Airflow for workflow automation.
+
+Build a dashboard for real-time analytics.
+
+Implement advanced predictive modelling.
+
+👨‍💻 Author
+
+Kagiso Sebati
+Data Science Student | Aspiring Data Engineer
+GitHub: github.com/in/kagiisoo
+LinkedIn: linkedin.com/in/mamodupi-kagiso-sebati
